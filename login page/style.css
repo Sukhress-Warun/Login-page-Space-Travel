@@ -1,0 +1,56 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin :0;
+    overflow: hidden;
+}
+
+canvas{
+    background-color: black;
+    box-shadow:inset -1px -1px 2px,inset 1px 1px 2px , inset -1px 1px 2px , inset 1px -1px 2px ;
+}
+
+.login{
+    position: absolute;
+    top :50%;
+    left: 50%;
+    width: clamp(400px,25%,500px);
+    height: clamp(200px,20%,1000px);
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    border: 2px solid rgba(76, 76, 76, 0.512);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.iptext{
+    background-color: rgba(50, 50, 50, 0.523);
+    border: none;
+    max-width: 450px;
+    min-width: 350px;
+    min-height: 30px;
+    color: rgba(150, 150, 150, 1);
+    margin: 3% 0;
+    border-radius: 2px;
+    font-size: large;
+    position: inherit;
+}
+
+.iptext:focus-visible{
+    outline: 1px solid rgba(255, 255, 255, 0.466);
+}
+
+button{
+    margin: 3% 0 0 50%;
+    transform: translate(-50%,0);
+    background-color: rgba(50, 50, 50, 0.523);
+    border-radius: 2px;
+    border :none;
+    width: 30%;
+    height: 25%;
+    font-size: medium;
+    color: rgba(150, 150, 150, 1);
+}
